@@ -22,7 +22,7 @@ public class RTCVideoViewManager extends SimpleViewManager<WebRTCView> {
    * camera identifier for js events
    */
   @ReactProp(name = "name")
-  public void setName(WebRTCView view, string name) {
+  public void setName(WebRTCView view, String name) {
     view.setName(name);
   }
 

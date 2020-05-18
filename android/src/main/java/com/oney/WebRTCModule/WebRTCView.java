@@ -170,6 +170,11 @@ public class WebRTCView extends ViewGroup {
      */
     private VideoTrack videoTrack;
 
+    /**
+     * name of camera
+     */
+    private String name;
+
     public WebRTCView(Context context) {
         super(context);
 
@@ -464,7 +469,7 @@ public class WebRTCView extends ViewGroup {
     /**
    * camera identifier for js events
    */
-    public void setName(string name) {
+    public void setName(String name) {
         if (this.name != name) {
             this.name = name;
         }

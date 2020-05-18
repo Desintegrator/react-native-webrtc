@@ -129,7 +129,7 @@ public class WebRTCModule extends ReactContextBaseJavaModule {
         return "WebRTCModule";
     }
 
-    public void jsEvent(name, params) {
+    public void jsEvent(String name, @Nullable WritableMap params) {
         getReactApplicationContext()
             .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
             .emit(name, params);
