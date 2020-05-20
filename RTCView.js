@@ -56,6 +56,7 @@ const RTCView = {
     zOrder: PropTypes.number,
 
     name: PropTypes.string,
+    snapshotOption: PropTypes.object,
   },
 };
 
