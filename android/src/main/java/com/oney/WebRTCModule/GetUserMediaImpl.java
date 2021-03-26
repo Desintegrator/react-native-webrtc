@@ -83,7 +83,7 @@ class GetUserMediaImpl {
         Log.d(TAG, "getUserMedia(video): " + videoConstraintsMap);
 
         VideoCaptureController videoCaptureController
-            = new VideoCaptureController(cameraEnumerator, videoConstraintsMap);
+            = new VideoCaptureController(cameraEnumerator, videoConstraintsMap, reactContext);
         VideoCapturer videoCapturer = videoCaptureController.getVideoCapturer();
         if (videoCapturer == null) {
             return null;
